@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <title>WebStudio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span class="logo_first">Web</span><span class="logo_second">Studio</span>
+        </a>
         <nav>
-            <a href="index.html" class="logo">
-                <span class="logo_first">Web</span><span class="logo_second">Studio</span>
-            </a>
             <ul>
-                <li><a href="index.html">Студія</a></li>
-                <li><a href="portfolio.html">Портфоліо</a></li>
-                <li><a href="#">Контакт</a></li>
+                <li><a class="header_button_left" href="index.html">Студія</a></li>
+                <li><a class="header_button_left" href="portfolio.html">Портфоліо</a></li>
+                <li><a class="header_button_left" href="#">Контакт</a></li>
             </ul>
         </nav>
         <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="header_button_right" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="header_button_right" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <main>
-        <section>
-            <h2>Портфоліо</h2>
+        <section class="section_portfolio">
             <ul>
                 <li><button type="button">Усі</button></li>
                 <li><button type="button">Веб-сайти</button></li>
@@ -34,7 +36,7 @@
                 <li><button type="button">Маркетинг</button></li>
             </ul>
 
-            <ul>
+            <ul class="portfolio_list_box">
                 <li>
                     <img src="images/laptop.jpg" alt="laptop">
                     <h3>Технокряк</h3>
@@ -89,9 +91,9 @@
         </a>
         <address>
             <ul>
-                <li><a href="https://goo.gl/maps/qWS8BV7t2WGqXTAa9">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li><a class="footer_address_link" href="https://goo.gl/maps/qWS8BV7t2WGqXTAa9">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li><a class="footer_mailtel_link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="footer_mailtel_link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
     </footer>
