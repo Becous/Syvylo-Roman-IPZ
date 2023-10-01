@@ -53,7 +53,14 @@ ul, a, address{
     font-weight: 500;
     letter-spacing: 0.28px;
     word-wrap: break-word;
+    transition: color 0.5s;
 }
+
+.header_button_left:hover,
+.header_button_left:focus{
+    color: var(--blue_color);
+}
+
 
 .header_button_left_active{
     font-size: 14px;
@@ -63,12 +70,6 @@ ul, a, address{
     color: var(--light_blue);
 }
 
-.header_button_left:hover,
-.header_button_left:focus{
-    transition: 0.5s;
-    color: var(--blue_color);
-}
-
 
 .header_button_right{
     color: var(--gray);
@@ -76,11 +77,11 @@ ul, a, address{
     font-weight: 500;
     letter-spacing: 0.28px;
     word-wrap: break-word;
+    transition: color 0.5s;
 }
 
 .header_button_right:hover,
 .header_button_right:focus{
-    transition: 0.5s;
     color: var(--blue_color);
 }
 
@@ -115,12 +116,12 @@ ul, a, address{
     font-weight: 700;
     line-height: 185%;
     letter-spacing: 0.96px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    transition: color 0.5s;
 }
 
-.main_page_button:hover
+.main_page_button:hover,
 .main_page_button:focus{
-    transition: 0.5s;
     background: var(--light_blue);
 }
 
@@ -209,15 +210,15 @@ ul, a, address{
     color: var(--some_more_light_black);
     font-size: 16px;
     font-weight: 500;
-    line-height: 162,5%;
+    line-height: 162.5%;
     letter-spacing: 0.48px;
     word-wrap: break-word;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .section_portfolio button:hover,
 .section_portfolio button:focus{
     background: var(--blue_color); 
-    transition: 0.5s;
     color: var(--white);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
