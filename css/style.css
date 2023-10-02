@@ -2,6 +2,7 @@
     --blue_color: #2196F3;
     --black: #000;
     --white: #FFF;
+    --dif_white: #EEE;
     --some_more_light_black: #212121;
     --gray: #757575;
     --light_blue: #188CE8;
@@ -20,6 +21,8 @@ body{
     line-height: normal;
     font-size: 14px;
     background-color: var(--white);
+    margin: 0;
+    padding: 0;
 }
 
 ul, a, address{
@@ -28,7 +31,46 @@ ul, a, address{
     font-style: normal;
 }
 
+.container{ 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /*Header*/
+.header_style{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header_style .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header_left_button_list{
+    display: flex;
+    margin-left: 93px;
+    padding: 0;
+    
+}
+
+.header_left_button_list li{ 
+    margin-right: 50px;
+}
+
+.header_right_button_list{
+    display: flex;
+    padding: 0;
+}
+
+.header_right_button_list li{
+    margin-right: 30px;
+}
+
 .logo{
     font-family: var(--raleway_font);
     font-size: 26px;
@@ -76,7 +118,6 @@ ul, a, address{
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    word-wrap: break-word;
     transition: color 0.5s;
 }
 
@@ -89,9 +130,13 @@ ul, a, address{
 
 .section_main{
     background-color: var(--background_dark);
-    color: var(--white);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .section_main h1{
+    margin: auto;
     color: var(--white);
     font-size: 44px;
     font-weight: 900;
@@ -99,7 +144,6 @@ ul, a, address{
     line-height: 136%;
     letter-spacing: 2.64px;
     word-wrap: break-word;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -112,12 +156,16 @@ ul, a, address{
     cursor: pointer;
 
     color: var(--white);
+    width: 200px;
+    height: 50px;
     font-size: 16px;
     font-weight: 700;
     line-height: 185%;
     letter-spacing: 0.96px;
     word-wrap: break-word;
     transition: color 0.5s;
+    
+    margin-top: 30px;
 }
 
 .main_page_button:hover,
@@ -126,6 +174,13 @@ ul, a, address{
 }
 
 /*Us plus section*/
+
+.list_us_plus{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
 .list_us_plus h3{
     color: var(--some_more_light_black);
     font-size: 14px;
@@ -144,16 +199,42 @@ ul, a, address{
 }
 
 /*Work section*/
+.section_work{
+    text-align: center;
+}
+
 .section_work h2{
     color: var(--some_more_light_black);
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.section_work ul{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 
 /*Section Worker*/
+.section_worker{
+    text-align: center;
+}
+
+.section_worker ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.section_worker li{
+    margin-right: 15px;
+}
 
 .section_worker h2{
     color: var(--some_more_light_black);
@@ -161,6 +242,8 @@ ul, a, address{
     font-weight: 700;
     letter-spacing: 1.08px;
     word-wrap: break-word;
+
+    margin-bottom: 50px;
 }
 
 .worker_card h3{
@@ -183,7 +266,12 @@ ul, a, address{
 /*Footer*/
 .footer_page{
     background-color: var(--background_dark);
+    height: 251px;
     color:  var(--white);
+}
+
+.footer_page address ul li{
+    margin-bottom: 12px;
 }
 
 .footer_address_link{
@@ -200,6 +288,20 @@ ul, a, address{
 }
 
 /*Portfolio*/
+.button_row{
+    display: flex;
+    justify-content: center;
+}
+
+.button_row ul{
+    display: flex;
+}
+
+.button_row ul li{
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+
 .section_portfolio button{
     height: 100%;
     background: var(--button_white); 
@@ -222,6 +324,25 @@ ul, a, address{
     color: var(--white);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+}
+.portfolio_box{
+    margin-bottom: 94px;
+}
+.portfolio_list_box {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio_list_box li {
+    width: calc(33.33% - 10px); /* Розмір для 3 елементів в рядку з відступом між ними */
+    margin-bottom: 20px; /* Додайте відступ між рядками, якщо потрібно */
+}
+
+.portfolio_card{
+    border: 1px var(--dif_white) solid;
 }
 
 .portfolio_list_box h3{
