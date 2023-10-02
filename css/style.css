@@ -326,23 +326,20 @@ ul, a, address{
     cursor: pointer;
 }
 .portfolio_box{
-    margin-bottom: 94px;
+    margin-bottom: 74px;
 }
 .portfolio_list_box {
     list-style: none;
     padding: 0;
+    margin: 0; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .portfolio_list_box li {
-    width: calc(33.33% - 10px); /* Розмір для 3 елементів в рядку з відступом між ними */
-    margin-bottom: 20px; /* Додайте відступ між рядками, якщо потрібно */
-}
-
-.portfolio_card{
-    border: 1px var(--dif_white) solid;
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px; 
 }
 
 .portfolio_list_box h3{
