@@ -42,6 +42,7 @@ ul, a, address{
     height: 80px;
     display: flex;
     align-items: center;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
 .header_style .container{
@@ -253,10 +254,7 @@ ul, a, address{
 .worker_card{
     background-color: var(--white);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.20); 
-    border-top-left-radius: 4px; 
-    border-top-right-radius: 4px;
-
-    
+    border-radius: 4px;
 }
 
 .worker_card h3{
@@ -279,8 +277,12 @@ ul, a, address{
 /*Footer*/
 .footer_page{
     background-color: var(--background_dark);
-    height: 251px;
     color:  var(--white);
+}
+
+.footer_page .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer_page address ul li{
@@ -301,9 +303,11 @@ ul, a, address{
 }
 
 /*Portfolio*/
+
 .button_row{
     display: flex;
     justify-content: center;
+    margin-top: 94px;
 }
 
 .button_row ul{
@@ -315,13 +319,14 @@ ul, a, address{
     margin-bottom: 50px;
 }
 
-.section_portfolio button{
+.button_row button{
     height: 100%;
     background: var(--button_white); 
     font-family: var(--roboto_font);
     border-radius: 4px;
     border: none;
-    
+    padding: 6px 22px;
+
     color: var(--some_more_light_black);
     font-size: 16px;
     font-weight: 500;
@@ -341,6 +346,12 @@ ul, a, address{
 .portfolio_box{
     margin-bottom: 74px;
 }
+
+.portfolio_card{
+    border: 1px solid var(--dif_white);
+    margin-bottom: 20px;
+}
+
 .portfolio_list_box {
     list-style: none;
     padding: 0;
@@ -350,13 +361,9 @@ ul, a, address{
     justify-content: space-between;
 }
 
-.portfolio_list_box li {
-    width: calc(33.33% - 10px);
-    margin-bottom: 20px; 
-}
-
 .portfolio_list_box h3{
     color: var(--some_more_light_black);
+    padding-left: 24px;
     font-size: 18px;
     font-weight: 700;
     line-height: 200%;
@@ -365,8 +372,9 @@ ul, a, address{
 }
 .portfolio_list_box p{
     color: var(--gray);
+    padding-left: 24px;
     font-size: 16px;
-    line-height: 187,5%;
+    line-height: 187.5%;
     letter-spacing: 0.48px;
     word-wrap: break-word
 }
