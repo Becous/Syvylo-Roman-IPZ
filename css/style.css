@@ -300,6 +300,7 @@ ul, a, address{
 .button_row ul{
     display: flex;
     gap: 8px;
+    margin-bottom: 50px;
 }
 .button_row button{
     height: 100%;
