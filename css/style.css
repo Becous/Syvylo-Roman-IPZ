@@ -31,12 +31,13 @@ ul, a, address{
     font-style: normal;
 }
 
-.container{ 
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 /*Header*/
 .header_style{
     height: 80px;
@@ -48,7 +49,6 @@ ul, a, address{
 .header_style .container{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 
@@ -56,20 +56,13 @@ ul, a, address{
     display: flex;
     margin-left: 93px;
     padding: 0;
-    
-}
-
-.header_left_button_list li{ 
-    margin-right: 50px;
+    gap: 50px;
 }
 
 .header_right_button_list{
     display: flex;
-    padding: 0;
-}
-
-.header_right_button_list li{
-    margin-right: 30px;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 .logo{
@@ -95,7 +88,6 @@ ul, a, address{
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    word-wrap: break-word;
     transition: color 0.5s;
 }
 
@@ -120,6 +112,7 @@ ul, a, address{
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: color 0.5s;
+    white-space: nowrap;
 }
 
 .header_button_right:hover,
@@ -216,38 +209,32 @@ ul, a, address{
 
 .section_work ul{
     display: flex;
-    justify-content: space-between;
-
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 94px;
 }
-
-
 /*Section Worker*/
 .section_worker{
     text-align: center;
     background-color: var(--button_white);
-
+    padding: 0;
+    margin: 0;
     padding-bottom: 94px;
 }
 
 .section_worker ul{
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: nowrap;
 }
-
-.section_worker li{
-    margin-right: 15px;
-}
-
 .section_worker h2{
     color: var(--some_more_light_black);
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
     word-wrap: break-word;
-
+    margin-top: 0;
     margin-bottom: 50px;
     padding-top: 94px;
 }
@@ -312,13 +299,8 @@ ul, a, address{
 
 .button_row ul{
     display: flex;
+    gap: 8px;
 }
-
-.button_row ul li{
-    margin-right: 8px;
-    margin-bottom: 50px;
-}
-
 .button_row button{
     height: 100%;
     background: var(--button_white); 
