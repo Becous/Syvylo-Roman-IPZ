@@ -142,7 +142,8 @@ img {
 /*Section Main*/
 
 .section_main {
-  background-color: var(--background_dark);
+  background-image: url(/images/main_section_background.jpg);
+  background-size: 100%;
   height: 600px;
   display: flex;
   align-items: center;
@@ -237,6 +238,7 @@ img {
   gap: 30px;
   justify-content: center;
 }
+
 /*Section Worker*/
 .section_worker {
   text-align: center;
@@ -368,6 +370,11 @@ img {
 .portfolio_card {
   max-width: 370px;
   border: 1px solid var(--dif_white);
+}
+
+.portfolio_card:hover,
+.portfolio_card:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio_card a {
