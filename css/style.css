@@ -8,14 +8,15 @@
   --light_blue: #188ce8;
   --background_dark: #2f303a;
   --button_white: #f5f4fa;
+  --icon: #afb1b8;
 
   --raleway_font: "Raleway", sans-serif;
-  --arial_font: "Arial" sans-serif;
   --roboto_font: "Roboto", sans-serif;
 }
-/* * {
+
+* {
   outline: 1px solid red;
-} */
+}
 
 a,
 ul,
@@ -134,6 +135,11 @@ img {
   white-space: nowrap;
 }
 
+.header_icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .header_button_right:hover,
 .header_button_right:focus {
   color: var(--blue_color);
@@ -142,7 +148,8 @@ img {
 /*Section Main*/
 
 .section_main {
-  background-image: url(/images/main_section_background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main_section_background.jpg);
   background-size: 100%;
   height: 600px;
   display: flex;
