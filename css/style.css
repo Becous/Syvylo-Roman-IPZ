@@ -151,8 +151,9 @@ img {
 .section_main {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/main_section_background.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 600px;
   display: flex;
   align-items: center;
