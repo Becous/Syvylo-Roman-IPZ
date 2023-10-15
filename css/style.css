@@ -128,6 +128,16 @@ img {
   color: var(--light_blue);
 }
 
+/* .header_button_left_active::after {
+  content: "";
+  display: block;
+  bottom: 859px;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  position: absolute;
+} */
+
 .header_button_right {
   display: flex;
   align-items: center;
@@ -259,6 +269,30 @@ img {
   display: flex;
   gap: 30px;
   justify-content: center;
+}
+
+.work_card {
+  position: relative;
+}
+
+.work_overlay_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.42px;
+  word-wrap: break-word;
 }
 
 /*Section Worker*/
