@@ -25,7 +25,8 @@ body,
 h3,
 h2,
 p,
-li {
+li,
+svg {
   margin: 0;
   padding: 0;
 }
@@ -128,6 +129,8 @@ img {
 }
 
 .header_button_right {
+  display: flex;
+  align-items: center;
   color: var(--gray);
   font-size: 14px;
   font-weight: 500;
@@ -154,6 +157,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* object-fit: cover; */
   height: 600px;
   display: flex;
   align-items: center;
@@ -211,6 +215,7 @@ img {
 
 .us_plus_logo_box {
   background-color: var(--icon_back);
+  max-height: 120px;
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
@@ -287,6 +292,10 @@ img {
   border-radius: 4px;
 }
 
+.worker_info {
+  padding: 0 32px 30px;
+}
+
 .worker_card h3 {
   color: var(--some_more_light_black);
   font-size: 16px;
@@ -300,7 +309,6 @@ img {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 32px 30px;
   margin-top: 16px;
 }
 
@@ -356,7 +364,7 @@ img {
   gap: 30px;
 }
 
-.regular_customers_section h3 {
+.regular_customers_section h2 {
   color: var(--some_more_light_black);
   font-size: 36px;
   font-weight: 700;
@@ -366,6 +374,10 @@ img {
   margin-bottom: 50px;
 }
 
+.logo_client_card {
+  max-height: 92px;
+}
+
 .logo_client_card a {
   border-radius: 4px;
   border: 1px var(--icon) solid;
@@ -373,6 +385,7 @@ img {
   color: var(--icon);
   fill: currentColor;
   transition: color 0.5s, border 0.5s;
+  height: 100%;
 }
 
 .client_logo {
@@ -466,8 +479,8 @@ img {
   background: rgba(255, 255, 255, 0.1);
   width: 100%;
   height: 100%;
+  color: var(--white);
 
-  color: var(--icon);
   fill: currentColor;
   transition: color 0.5s, background-color 0.5s;
 }
@@ -477,6 +490,10 @@ img {
   color: var(--white);
   fill: currentColor;
   background-color: var(--light_blue);
+}
+
+.footer_icon {
+  fill: currentColor;
 }
 
 /*Portfolio*/
@@ -524,6 +541,7 @@ img {
 .portfolio_card {
   max-width: 370px;
   border: 1px solid var(--dif_white);
+  transition: box-shadow 0.5s;
 }
 
 .portfolio_card:hover,
