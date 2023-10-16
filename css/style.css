@@ -586,8 +586,37 @@ img {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio_card a {
+.image_container {
+  position: relative;
   display: inline-block;
+  overflow: hidden;
+}
+
+.text_section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  opacity: 0.9;
+  transition-property: transform;
+  background-color: #2196f3;
+}
+
+.text_portfolio {
+  font-size: 18px;
+  line-height: 155.56%;
+  letter-spacing: 0.54px;
+  color: var(--white);
+  padding: 63px 24px;
+  background-color: var(--brand-color);
+  opacity: 0.9;
+}
+
+.image_container:hover .text_section,
+.image_container:focus .text_section {
+  transform: translateY(0);
 }
 
 .portfolio_list_box {
@@ -605,7 +634,7 @@ img {
   letter-spacing: 1.08px;
   word-wrap: break-word;
 }
-.portfolio_list_box p {
+.portfolio_card_text p {
   color: var(--gray);
   font-size: 16px;
   line-height: 187.5%;
