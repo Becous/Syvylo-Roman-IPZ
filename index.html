@@ -47,7 +47,7 @@
         <section class="section_main">
             <div class="container">
                 <h1>Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="main_page_button">Замовити послугу</button>
+                <button type="button" class="main_page_button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section_us_plus">
@@ -96,9 +96,24 @@
             <div class="container">
                 <h2>Чим ми займаємося</h2>
                 <ul>
-                    <li><img src="images/typing.jpg" alt="Набираєм текст" width="370" height="100%"></li>
-                    <li><img src="images/phone.jpg" alt="Дивимось в телефон" width="370" height="100%"></li>
-                    <li><img src="images/color_picker.jpg" alt="Знаєм кольори" width="370" height="100%"></li>
+                    <li class="work_card">
+                        <img class="work_img" src="images/typing.jpg" alt="Набираєм текст" width="370" height="100%">
+                        <div class="work_overlay_text">
+                            Десктопні додатки
+                        </div>
+                    </li>
+                    <li class="work_card">
+                        <img src="images/phone.jpg" alt="Дивимось в телефон" width="370" height="100%">
+                        <div class="work_overlay_text">
+                            Мобільні додатки
+                        </div>
+                    </li>
+                    <li class="work_card">
+                        <img src="images/color_picker.jpg" alt="Знаєм кольори" width="370" height="100%">
+                        <div class="work_overlay_text">
+                            Дизайнерські рішення
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -109,149 +124,157 @@
                     <li>
                         <div class="worker_card">
                             <img src="images/man.jpg" alt="Ігор Дем'яненко " width="270" height="260">
-                            <h3>Ігор Дем'яненко</h3>
-                            <p>Product Designer</p>
-                            <ul class="social_link_list">
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#instagram">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#x">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#meta">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com"  rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#linkedin">
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="worker_info">
+                                <h3>Ігор Дем'яненко</h3>
+                                <p>Product Designer</p>
+                                <ul class="social_link_list">
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#instagram">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#x">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#meta">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com"  rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#linkedin">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="worker_card">
                             <img src="images/woman.jpg" alt="Ольга Рєпіна" width="270" height="260">
-                            <h3>Ольга Рєпіна</h3>
-                            <p>Ольга Рєпіна</p>
-                            <ul class="social_link_list">
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#instagram">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#x">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#meta">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com"  rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#linkedin">
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="worker_info">
+                                <h3>Ольга Рєпіна</h3>
+                                <p>Frontend Developer</p>
+                                <ul class="social_link_list">
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#instagram">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#x">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#meta">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com"  rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#linkedin">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="worker_card">
                             <img src="images/irish_man.jpg" alt="Микола Тарасов" width="270" height="260">
-                            <h3>Микола Тарасов</h3>
-                            <p>Marketing</p>
-                            <ul class="social_link_list">
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#instagram">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#x">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#meta">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com"  rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#linkedin">
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="worker_info">
+                                <h3>Микола Тарасов</h3>
+                                <p>Marketing</p>
+                                <ul class="social_link_list">
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#instagram">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#x">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#meta">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com"  rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#linkedin">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="worker_card">
                             <img src="images/italian_man.jpg" alt="Михайло Єрмаков" width="270" height="260">
-                            <h3>Михайло Єрмаков</h3>
-                            <p>UI Designer</p>
-                            <ul class="social_link_list">
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#instagram">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#x">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com" rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#meta">
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social_list_item">
-                                    <a href="https://instagram.com"  rel="nofollow">
-                                        <svg class="icon_social" width="20" height="20">
-                                            <use href="./images/svg/icons.svg#linkedin">
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="worker_info">
+                                <h3>Михайло Єрмаков</h3>
+                                <p>UI Designer</p>
+                                <ul class="social_link_list">
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#instagram">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#x">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com" rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#meta">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_list_item">
+                                        <a href="https://instagram.com"  rel="nofollow">
+                                            <svg class="icon_social" width="20" height="20">
+                                                <use href="./images/svg/icons.svg#linkedin">
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -259,7 +282,7 @@
         </section>
         <section class="regular_customers_section">
             <div class="container">
-                <h3>Постійні клієнти</h3>
+                <h2>Постійні клієнти</h2>
                 <ul class="logo_client_list">
                     <li class="logo_client_card">
                         <a href="#">
@@ -356,5 +379,17 @@
         </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal_window">
+            <button type="button" class="close_modal_button" data-modal-close>
+                <svg class="icon_modal">
+                    <use href="./images/svg/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
