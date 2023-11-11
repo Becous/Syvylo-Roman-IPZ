@@ -731,7 +731,6 @@ img {
   transform: translate(-50%, -50%);
   padding: 39px 41px 40px 41px;
   min-width: 528px;
-  min-height: 581px;
   background-color: var(--white);
   opacity: 1;
   border-radius: 4px;
@@ -761,6 +760,7 @@ img {
   fill: var(--black);
   transition: fill 0.5s;
 }
+
 .close_modal_button:hover .icon_modal,
 .close_modal_button:focus .icon_modal {
   fill: var(--blue_color);
@@ -806,6 +806,7 @@ img {
   font-weight: 400;
   letter-spacing: 0.12px;
   padding: 11px 12px;
+  resize: none;
 }
 
 .form_input:focus + .form_icon,
@@ -813,6 +814,7 @@ img {
   transition: 300ms;
   color: var(--blue_color);
 }
+
 .form_input:hover,
 .form_input:focus,
 .form_textarea:hover,
@@ -821,7 +823,7 @@ img {
 }
 
 .form_text_label {
-  color: #757575;
+  color: var(--gray);
   font-size: 12px;
   font-family: Roboto;
   font-weight: 400;
@@ -846,6 +848,7 @@ img {
 
 .form_a {
   text-decoration: underline;
+  color: var(--blue_color);
 }
 
 input[type="checkbox"] {
@@ -881,6 +884,7 @@ input[type="checkbox"]:checked::before {
   border-radius: 4px;
   border: none;
   width: 200px;
+  cursor: pointer;
 
   padding: 10px 52px;
 
@@ -890,4 +894,9 @@ input[type="checkbox"]:checked::before {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+}
+
+.form_button:hover,
+.form_button:focus {
+  background: var(--light_blue);
 }
