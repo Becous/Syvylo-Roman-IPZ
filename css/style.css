@@ -729,7 +729,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 39px 41px 40px 41px;
+  padding: 40px;
   min-width: 528px;
   background-color: var(--white);
   opacity: 1;
@@ -837,7 +837,7 @@ img {
 
 .form_icon {
   position: absolute;
-  color: var(--black);
+  color: var(--some_more_light_black);
   top: 28px;
   left: 10px;
 }
@@ -845,6 +845,7 @@ img {
 .checkbox_div {
   padding-top: 20px;
   padding-bottom: 30px;
+  padding-left: 15px;
   display: flex;
   gap: 9px;
 }
@@ -854,11 +855,16 @@ img {
   color: var(--blue_color);
 }
 
+.label_license {
+  cursor: pointer;
+}
+
 input[type="checkbox"] {
   appearance: none;
   border: var(--some_more_light_black) 1px solid;
   height: 15px;
   width: 16px;
+  color: var(--white);
   border-radius: 2px;
   transition-duration: 0.5s;
 }
