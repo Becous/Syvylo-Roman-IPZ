@@ -217,17 +217,17 @@ img {
 
 /*Us plus section*/
 
-.section_us_plus {
+.section-plus {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.list_us_plus {
+.section-plus__ul {
   gap: 30px;
   display: flex;
 }
 
-.us_plus_logo_box {
+.section-plus__ul__logo--background {
   background-color: var(--icon_back);
   max-height: 120px;
   border-radius: 4px;
@@ -235,7 +235,7 @@ img {
   margin-bottom: 30px;
 }
 
-.list_us_plus h3 {
+.section-plus__ul__h3 {
   color: var(--some_more_light_black);
   font-size: 14px;
   font-weight: 700;
@@ -245,7 +245,7 @@ img {
   margin-bottom: 10px;
 }
 
-.list_us_plus p {
+.section-plus__ul__p {
   color: var(--gray);
   font-size: 14px;
   line-height: 171%;
