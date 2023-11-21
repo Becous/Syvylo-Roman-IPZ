@@ -62,46 +62,46 @@ img {
   margin-right: auto;
 }
 /*Header*/
-.header_style {
+.header {
   height: 80px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
 
-.header_style .container {
+.header .container {
   display: flex;
   align-items: center;
 }
 
-.header_style nav {
+.header__nav {
   margin-left: 93px;
 }
 
-.header_left_button_list {
+.header__buttons__left__list {
   display: flex;
   padding: 0;
   gap: 50px;
   padding-left: 10px;
 }
 
-.header_right_button_list {
+.header__buttons_right__list {
   display: flex;
   margin-left: auto;
   gap: 40px;
 }
 
-.logo {
+.header__logo {
   font-family: var(--raleway_font);
   font-size: 26px;
   font-weight: 700;
 }
 
-.logo_first {
+.header__logo--blue {
   color: var(--blue_color);
 }
 
-.logo_second {
+.header__logo--black {
   color: var(--black);
 }
 
@@ -109,7 +109,7 @@ img {
   color: var(--white);
 }
 
-.header_button_left {
+.header__button__left {
   color: var(--some_more_light_black);
   font-size: 14px;
   font-weight: 500;
@@ -117,12 +117,12 @@ img {
   transition: color 0.5s;
 }
 
-.header_button_left:hover,
-.header_button_left:focus {
+.header__button__left:hover,
+.header__button__left:focus {
   color: var(--blue_color);
 }
 
-.header_button_left_active {
+.header__button__left--active {
   position: relative;
   font-size: 14px;
   font-weight: 500;
@@ -131,7 +131,7 @@ img {
   color: var(--light_blue);
 }
 
-.header_left_button_list .header_button_left_active::after {
+.header__buttons__left__list .header__button__left--active::after {
   content: "";
   display: block;
   bottom: -32px;
@@ -143,7 +143,7 @@ img {
   position: absolute;
 }
 
-.header_button_right {
+.header__button__right {
   display: flex;
   align-items: center;
   color: var(--gray);
@@ -154,13 +154,13 @@ img {
   white-space: nowrap;
 }
 
-.header_icon {
+.header__button__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.header_button_right:hover,
-.header_button_right:focus {
+.header__button__right:hover,
+.header__button__right:focus {
   color: var(--blue_color);
 }
 
