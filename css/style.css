@@ -91,6 +91,10 @@ img {
   gap: 40px;
 }
 
+.header .logo {
+  margin-bottom: 0;
+}
+
 .logo {
   font-family: var(--raleway_font);
   font-size: 26px;
