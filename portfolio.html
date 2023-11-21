@@ -11,50 +11,70 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="header_style">
-    <div class="container">
-        <a href="index.html" class="logo">
-            <span class="logo_first">Web</span><span class="logo_second">Studio</span>
-        </a>
-        <nav>
-            <ul class="header_left_button_list">
-                <li><a class="header_button_left" href="index.html">Студія</a></li>
-                <li><a class="header_button_left_active" href="portfolio.html">Портфоліо</a></li>
-                <li><a class="header_button_left" href="#">Контакт</a></li>
-            </ul>
-        </nav>
-        <ul class="header_right_button_list">
-            <li>
-                <a class="header_button_right" href="mailto:info@devstudio.com">
-                    <svg class="header_icon" width="16" height="16"> 
-                        <use href="./images/svg/icons.svg#mail">
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li>
-                <a class="header_button_right" href="tel:+380961111111">
-                    <svg class="header_icon" width="16", height="16">
-                        <use href="./images/svg/icons.svg#phone">
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section class="section_portfolio">
+
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-          <div class="button_row">
-            <ul>
-              <li><button type="button">Усі</button></li>
-              <li><button type="button">Веб-сайти</button></li>
-              <li><button type="button">Додатки</button></li>
-              <li><button type="button">Дизайн</button></li>
-              <li><button type="button">Маркетинг</button></li>
+            <a href="index.html" class="header__logo">
+                <span class="header__logo--blue">Web</span><span class="header__logo--black">Studio</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__buttons__ul--left">
+                    <li><a class="header__button--left" href="index.html">Студія</a></li>
+                    <li><a class="header__button--left--active" href="portfolio.html">Портфоліо</a></li>
+                    <li><a class="header__button--left" href="#">Контакт</a></li>
+                </ul>
+            </nav>
+            <ul class="header__buttons__ul--right">
+                <li>
+                    <a class="header__button--right" href="mailto:info@devstudio.com">
+                        <svg class="header__button__icon" width="16" height="16"> 
+                            <use href="./images/svg/icons.svg#mail">
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li>
+                    <a class="header__button--right" href="tel:+380961111111">
+                        <svg class="header__button__icon" width="16", height="16">
+                            <use href="./images/svg/icons.svg#phone">
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+      <!-- Section portfolio -->
+      <section class="section-portfolio">
+        <div class="container">
+
+          <!-- Button row -->
+          <div class="button-row">
+            <ul class="button-row__list">
+              <li class="button-row__list__item">
+                <button type="button">Усі</button>
+              </li>
+              <li class="button-row__list__item">
+                <button type="button">Веб-сайти</button>
+              </li>
+              <li class="button-row__list__item">
+                <button type="button">Додатки</button>
+              </li>
+              <li class="button-row__list__item">
+                <button type="button">Дизайн</button>
+              </li>
+              <li class="button-row__list__item">
+                <button type="button">Маркетинг</button>
+              </li>
             </ul>
           </div>
+
+          <!-- Portfolio cards box  -->
           <ul class="portfolio_list_box">
             <li class="portfolio_card">
               <a href="#">
