@@ -78,14 +78,14 @@ img {
   margin-left: 93px;
 }
 
-.header__buttons__left__list {
+.header__buttons__ul--left {
   display: flex;
   padding: 0;
   gap: 50px;
   padding-left: 10px;
 }
 
-.header__buttons_right__list {
+.header__buttons__ul--right {
   display: flex;
   margin-left: auto;
   gap: 40px;
@@ -109,7 +109,7 @@ img {
   color: var(--white);
 }
 
-.header__button__left {
+.header__button--left {
   color: var(--some_more_light_black);
   font-size: 14px;
   font-weight: 500;
@@ -117,12 +117,12 @@ img {
   transition: color 0.5s;
 }
 
-.header__button__left:hover,
-.header__button__left:focus {
+.header__button--left:hover,
+.header__button--left:focus {
   color: var(--blue_color);
 }
 
-.header__button__left--active {
+.header__button--left--active {
   position: relative;
   font-size: 14px;
   font-weight: 500;
@@ -131,7 +131,7 @@ img {
   color: var(--light_blue);
 }
 
-.header__buttons__left__list .header__button__left--active::after {
+.header__buttons__ul--left .header__button--left--active::after {
   content: "";
   display: block;
   bottom: -32px;
@@ -143,7 +143,7 @@ img {
   position: absolute;
 }
 
-.header__button__right {
+.header__button--right {
   display: flex;
   align-items: center;
   color: var(--gray);
@@ -159,8 +159,8 @@ img {
   margin-right: 10px;
 }
 
-.header__button__right:hover,
-.header__button__right:focus {
+.header__button--right:hover,
+.header__button--right:focus {
   color: var(--blue_color);
 }
 
