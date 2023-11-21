@@ -254,12 +254,12 @@ img {
 }
 
 /*Work section*/
-.section_work {
+.section-works {
   text-align: center;
   padding-bottom: 94px;
 }
 
-.section_work h2 {
+.section-works__h2 {
   color: var(--some_more_light_black);
   font-size: 36px;
   font-weight: 700;
@@ -269,17 +269,17 @@ img {
   margin-bottom: 50px;
 }
 
-.section_work ul {
+.section-works__ul {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.work_card {
+.section-works__ul__card {
   position: relative;
 }
 
-.work_overlay_text {
+.section-works__ul__card__overlay-text {
   position: absolute;
   bottom: 0;
   left: 0;
