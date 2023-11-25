@@ -65,21 +65,12 @@
   flex-direction: column;
 
   &__h2 {
-    color: $main-color;
-    font-size: 20px;
-    font-family: Roboto;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-
+    @include font($main-color, 20px, 700, 0.6px);
     margin-bottom: 12px;
   }
 
   &__label {
-    color: $third-color;
-    font-size: 12px;
-    font-family: Roboto;
-    font-weight: 400;
-    letter-spacing: 0.12px;
+    @include font($third-color, 12px, 400, 0.12px);
     margin-bottom: 10px;
     position: relative;
   }
@@ -118,14 +109,11 @@
   }
 
   &__textarea {
+    @include font(black, 12px, 400, 0.12px);
     height: 120px;
     width: 100%;
     border-radius: 4px;
     border: 1px #21212133 solid;
-    font-size: 12px;
-    font-family: Roboto;
-    font-weight: 400;
-    letter-spacing: 0.12px;
     padding: 11px 12px;
     resize: none;
 
@@ -141,22 +129,9 @@
   }
 
   &__button {
-    background: $second-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    width: 200px;
-    cursor: pointer;
-
+    @include font(white, 16px, 700, 0.96px, 30px);
+    @include button($second-color);
     padding: 10px 52px;
-
-    color: white;
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-
     &:hover,
     &:focus {
       background: $hover-color;
@@ -190,9 +165,12 @@
       }
     }
   }
+  &__text {
+    @include font($third-color, 14px, 400, 0.42px, 24px);
+  }
 
   &__link {
+    @include font($second-color, 14px, 400, 0.42px, 24px);
     text-decoration: underline;
-    color: $second-color;
   }
 }

@@ -15,61 +15,39 @@
   }
 
   &__title {
-    color: white;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 700;
+    @include font(white, 14px, 700, 0.42px);
     text-transform: uppercase;
-    letter-spacing: 0.42px;
-
     margin-bottom: 20px;
   }
-
-  &__form {
+  &__form-box {
     margin-left: 94px;
   }
 
+  &__form {
+    display: flex;
+  }
+
   &__input {
+    @include font(rgba(255, 255, 255, 0.6), 16px, 400, 0.48px, 20px);
     width: 358px;
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px rgba(255, 255, 255, 0.3) solid;
     padding: 16px 0px 16px 16px;
-
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.48px;
-    color: var(--white_opacity_06);
   }
 
   &__button {
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
+    @include button($second-color);
+    @include font(white, 16px, 700, 0.96px, 30px);
     padding: 14px 28px;
     margin-left: 12px;
-
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-
-    color: var(--white);
+    display: flex;
+    justify-content: center;
   }
 }
 .info {
   margin-right: 93px;
-  &__box {
-  }
-
-  &__list {
-  }
-
   &__items {
     &:not(:last-child) {
       margin-bottom: 12px;
@@ -78,27 +56,12 @@
 }
 
 .mailtel__link {
-  color: #ffffff99;
-  line-height: 114%;
-  letter-spacing: 0.42px;
-  word-wrap: break-word;
+  @include font(rgba(255, 255, 255, 0.6), 14px, 400, 0.42px, 16px);
 }
-.address {
-  &__link {
-    color: $white;
-    font-size: 14px;
-    line-height: 114%;
-    letter-spacing: 0.42px;
-  }
+.address__link {
+  @include font(white, 14px, 400, 0.42px, 16px);
 }
 
-.button {
-  &__box {
-    display: flex;
-    align-items: center;
-  }
-
-  &__icon {
-    margin-left: 10px;
-  }
+.button__icon {
+  margin-left: 10px;
 }

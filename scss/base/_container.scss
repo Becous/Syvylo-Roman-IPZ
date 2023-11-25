@@ -7,11 +7,7 @@
 }
 
 .title {
-  color: $main-color;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-  word-wrap: break-word;
+  @include font($main-color, 36px, 700, 1.08px);
   margin: 0;
   margin-bottom: 50px;
 }

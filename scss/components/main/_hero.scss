@@ -8,38 +8,21 @@
   display: flex;
   align-items: center;
   text-align: center;
+
   &__title {
+    @include font(white, 44px, 900, 2.64px, 60px);
     margin: auto;
-    color: $white;
-    font-size: 44px;
-    font-weight: 900;
-    text-transform: uppercase;
-    line-height: 136%;
-    letter-spacing: 2.64px;
-    word-wrap: break-word;
     text-transform: uppercase;
     max-width: 696px;
   }
 
   &__button {
-    text-decoration: none;
-    background: $second-color;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px #00000026;
-    border: none;
-    cursor: pointer;
+    @include button($second-color);
+    @include font(white, 16px, 700, 0.96px, 30px);
 
-    color: $white;
     padding: 10px 24px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 185%;
-    letter-spacing: 0.96px;
-    word-wrap: break-word;
-    transition: color 0.5s;
-
     margin-top: 30px;
-    transition: 0.5s background;
+    transition: 0.5s background, color 0.5s;
     &:hover,
     &:focus {
       background: $hover-color;

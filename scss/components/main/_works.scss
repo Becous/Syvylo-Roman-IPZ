@@ -12,6 +12,9 @@
   }
 
   &__overlay-text {
+    @include font(white, 14px, 700, 0.42px);
+    text-transform: uppercase;
+
     position: absolute;
     bottom: 0;
     left: 0;
@@ -21,13 +24,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    color: $white;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.42px;
-    word-wrap: break-word;
   }
 }
