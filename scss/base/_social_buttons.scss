@@ -45,6 +45,11 @@
 }
 
 @media (max-width: 768px) {
+  .social {
+    text-align: center;
+    & .foooter__title {
+    }
+  }
 }
 @media (max-width: 450px) {
 }

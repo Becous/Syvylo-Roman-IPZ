@@ -16,12 +16,13 @@
   }
 
   &__title {
+    display: inline-block;
     @include font(white, 14px, 700, 0.42px);
     text-transform: uppercase;
     margin-bottom: 20px;
   }
   &__form-box {
-    margin-left: 94px;
+    padding-left: 94px;
   }
 
   &__form {
@@ -31,7 +32,7 @@
 
   &__input {
     @include font(rgba(255, 255, 255, 0.6), 16px, 400, 0.48px, 20px);
-    width: 358px;
+    min-width: 358px;
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -69,6 +70,38 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    & .container {
+      justify-content: space-around;
+    }
+
+    &__form-box {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 94px 0;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__form {
+      display: flex;
+      justify-content: center;
+      max-width: 450px;
+      gap: 20px;
+    }
+
+    &__input {
+      width: 100%;
+    }
+    &__button {
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  .info {
+    text-align: center;
+  }
 }
 @media (max-width: 450px) {
 }

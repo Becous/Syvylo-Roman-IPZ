@@ -59,3 +59,18 @@
     @include font($third-color, 16px, 400, 0.48px, 30px);
   }
 }
+
+@media (max-width: 768px) {
+  .portfolio {
+    &__list {
+      gap: 24px;
+      justify-content: start;
+    }
+  }
+  .card {
+    max-width: 354px;
+    &__img {
+      max-width: 100%;
+    }
+  }
+}
