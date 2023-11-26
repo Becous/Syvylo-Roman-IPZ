@@ -21,6 +21,7 @@
     padding: 0;
     gap: 50px;
     padding-left: 10px;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -55,6 +56,7 @@
     display: flex;
     margin-left: auto;
     gap: 40px;
+    flex-wrap: wrap;
   }
 
   &__button {
@@ -74,4 +76,26 @@
     fill: currentColor;
     margin-right: 10px;
   }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    margin-left: 75px;
+    margin-right: 80px;
+
+    &__list {
+      padding: 0;
+      flex-wrap: nowrap;
+    }
+
+    &__link_active::after {
+      bottom: -32px;
+    }
+  }
+
+  .contact__list {
+    gap: 10px;
+  }
+}
+@media (max-width: 450px) {
 }

@@ -12,6 +12,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 
   &__title {
@@ -25,6 +26,7 @@
 
   &__form {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__input {
@@ -64,4 +66,9 @@
 
 .button__icon {
   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 450px) {
 }

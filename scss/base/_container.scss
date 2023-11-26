@@ -1,13 +1,24 @@
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .title {
   @include font($main-color, 36px, 700, 1.08px);
   margin: 0;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 736px;
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    width: 450px;
+  }
 }

@@ -8,6 +8,7 @@
     width: 100%;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   &__card {
@@ -32,6 +33,7 @@
   }
 
   &__logo {
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     padding: 16px 32px;
@@ -45,4 +47,17 @@
       fill: currentColor;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .client {
+    &__list {
+      gap: 22px;
+    }
+    &__logo {
+      padding: 16px 60px;
+    }
+  }
+}
+@media (max-width: 450px) {
 }

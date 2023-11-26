@@ -3,8 +3,13 @@
   padding-bottom: 94px;
 
   &__list {
+    flex-wrap: wrap;
     gap: 30px;
     display: flex;
+  }
+
+  &__item {
+    max-width: 270px;
   }
 
   &__title {
@@ -24,4 +29,18 @@
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__item {
+      max-width: 350px;
+    }
+  }
+
+  .icon-box {
+    padding: 25px 142px;
+  }
+}
+@media (max-width: 450px) {
 }

@@ -5,6 +5,7 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__card {
@@ -25,4 +26,9 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 450px) {
 }
