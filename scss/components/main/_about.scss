@@ -1,6 +1,5 @@
 .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 
   &__list {
     flex-wrap: wrap;
@@ -42,5 +41,14 @@
     padding: 25px 142px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .about {
+    padding: 60px 0;
+    &__item {
+      max-width: 450px;
+    }
+  }
+  .icon-box {
+    padding: 25px 190px;
+  }
 }

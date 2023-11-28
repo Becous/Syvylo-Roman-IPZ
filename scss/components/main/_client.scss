@@ -59,5 +59,17 @@
     }
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .client {
+    padding: 60px 0;
+    &__card {
+      flex-basis: calc(50% - 15px);
+    }
+    &__list {
+      gap: 30px;
+    }
+    &__logo {
+      padding: 16px 52px;
+    }
+  }
 }

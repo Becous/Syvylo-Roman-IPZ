@@ -54,5 +54,18 @@
     }
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .worker {
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+    &__card {
+      max-width: 450px;
+      max-height: 622px;
+    }
+    &__info {
+      padding: 0 122px 24px;
+    }
+  }
 }

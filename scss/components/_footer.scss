@@ -103,5 +103,29 @@
     text-align: center;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+  .info {
+    margin-right: 0;
+  }
+  .footer {
+    & .social {
+      padding-top: 60px;
+    }
+    & .container {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__form-box {
+      flex-direction: column;
+      padding: 60px 0 0;
+    }
+    &__button {
+      max-width: 200px;
+    }
+  }
 }

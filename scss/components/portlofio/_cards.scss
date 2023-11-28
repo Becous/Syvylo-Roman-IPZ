@@ -10,6 +10,7 @@
     justify-content: center;
   }
 }
+
 .card {
   max-width: 370px;
   border: 1px solid #eee;
@@ -29,13 +30,16 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
+    width: 100%;
+    max-width: 370px;
   }
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(101%);
+  transform: translateY(134%);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   opacity: 0.9;
@@ -48,6 +52,7 @@
     opacity: 0.9;
   }
 }
+
 .card-text {
   padding: 20px 24px;
 
@@ -71,6 +76,28 @@
     max-width: 354px;
     &__img {
       max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    &__list {
+      gap: 30px;
+      justify-content: start;
+    }
+  }
+  .card {
+    min-width: auto;
+    &__image-container {
+      min-width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    &__img {
+      width: 110%;
+      height: auto;
+      position: relative;
     }
   }
 }
