@@ -1,0 +1,77 @@
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+
+  & .logo {
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  margin-left: 93px;
+  &__list {
+    display: flex;
+    padding: 0;
+    gap: 50px;
+    padding-left: 10px;
+  }
+
+  &__link {
+    @include font($main-color, 14px, 500, 0.28px);
+    transition: color 0.5s;
+
+    &:hover,
+    &:focus {
+      color: $second-color;
+    }
+
+    &_active {
+      position: relative;
+      @include font($second-color, 14px, 500, 0.28px);
+
+      &::after {
+        content: "";
+        display: block;
+        bottom: -31px;
+        border-radius: 2px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $second-color;
+        position: absolute;
+      }
+    }
+  }
+}
+.contact {
+  &__list {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+  }
+
+  &__button {
+    @include font($third-color, 14px, 500, 0.28px);
+    display: flex;
+    align-items: center;
+    transition: color 0.5s;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      color: $second-color;
+    }
+  }
+
+  &__logo {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

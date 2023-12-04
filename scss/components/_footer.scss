@@ -1,0 +1,67 @@
+.footer {
+  background-color: $footer-color;
+  color: $white;
+
+  & .logo {
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+
+  & .container {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: baseline;
+  }
+
+  &__title {
+    @include font(white, 14px, 700, 0.42px);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__form-box {
+    margin-left: 94px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    @include font(rgba(255, 255, 255, 0.6), 16px, 400, 0.48px, 20px);
+    width: 358px;
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px rgba(255, 255, 255, 0.3) solid;
+    padding: 16px 0px 16px 16px;
+  }
+
+  &__button {
+    @include button($second-color);
+    @include font(white, 16px, 700, 0.96px, 30px);
+    padding: 14px 28px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.info {
+  margin-right: 93px;
+  &__items {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.mailtel__link {
+  @include font(rgba(255, 255, 255, 0.6), 14px, 400, 0.42px, 16px);
+}
+.address__link {
+  @include font(white, 14px, 400, 0.42px, 16px);
+}
+
+.button__icon {
+  margin-left: 10px;
+}
