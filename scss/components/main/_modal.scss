@@ -67,6 +67,7 @@
   &__h2 {
     @include font($main-color, 20px, 700, 0.6px);
     margin-bottom: 12px;
+    text-align: center;
   }
 
   &__label {
