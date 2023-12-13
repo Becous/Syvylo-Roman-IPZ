@@ -8,12 +8,19 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    @include tablet {
+      gap: 24px;
+      justify-content: start;
+    }
   }
 }
 .card {
   max-width: 370px;
   border: 1px solid #eee;
   transition: box-shadow 0.5s;
+  @include tablet {
+    max-width: 354px;
+  }
 
   &:hover,
   &:focus {
@@ -23,6 +30,11 @@
   &:hover .overlay,
   &:focus .overlay {
     transform: translateY(0);
+  }
+  &__img {
+    @include tablet {
+      max-width: 100%;
+    }
   }
 
   &__image-container {

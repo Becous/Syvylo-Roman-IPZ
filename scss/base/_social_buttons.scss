@@ -1,4 +1,7 @@
 .social {
+  @include tablet {
+    text-align: center;
+  }
   &__list {
     display: flex;
     width: 100%;

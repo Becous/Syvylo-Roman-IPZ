@@ -1,10 +1,16 @@
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
+  &__item {
+    max-width: 350px;
+  }
 
   &__list {
     gap: 30px;
     display: flex;
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__title {
@@ -24,4 +30,7 @@
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
+  @include tablet {
+    padding: 25px 142px;
+  }
 }

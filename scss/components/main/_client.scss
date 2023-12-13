@@ -8,6 +8,9 @@
     width: 100%;
     justify-content: center;
     gap: 30px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__card {

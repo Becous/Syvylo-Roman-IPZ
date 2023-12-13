@@ -33,6 +33,9 @@
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet {
+    min-width: 450px;
+  }
 }
 
 .close-button {
@@ -163,15 +166,25 @@
         content: "✔";
         color: white;
         margin-left: -2px;
+        @include tablet {
+          margin-left: 2px;
+        }
       }
     }
   }
   &__text {
     @include font($third-color, 14px, 400, 0.42px, 24px);
+    @include tablet {
+      font-size: 12px;
+      white-space: nowrap;
+    }
   }
 
   &__link {
     @include font($second-color, 14px, 400, 0.42px, 24px);
     text-decoration: underline;
+    @include tablet {
+      font-size: 12px;
+    }
   }
 }

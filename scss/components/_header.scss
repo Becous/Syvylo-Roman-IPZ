@@ -1,6 +1,7 @@
 .header {
   display: block;
   border-bottom: 1px solid $grey-border;
+  padding: 26px 0;
 
   &__container,
   &__nav-list,
@@ -87,7 +88,7 @@
         background-color: $second-color;
 
         @include tablet {
-          bottom: 1px;
+          bottom: -10px;
         }
         @include desktop {
           bottom: -1px;
@@ -102,7 +103,7 @@
       margin-left: auto;
 
       @include tablet {
-        margin-left: auto;
+        margin-left: 0;
         margin-right: 0px;
         display: flex;
         align-items: flex-start;
