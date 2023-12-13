@@ -26,7 +26,6 @@
   }
 
   &__img {
-    margin-bottom: 30px;
     @include tablet {
       width: 354px;
       height: 374px;
@@ -38,12 +37,12 @@
   }
 
   &__info {
-    padding: 0 32px 30px;
+    padding: 30px 32px 30px;
     @include tablet {
-      padding: 0 74px 24px;
+      padding: 30px 74px 24px;
     }
     @include mobile {
-      padding: 0 120px 24px;
+      padding: 30px 120px 24px;
     }
   }
 
