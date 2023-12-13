@@ -2,10 +2,19 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  @include mobile {
+    justify-content: normal;
+  }
 
   &__list {
     display: flex;
     gap: 8px;
+    @include mobile {
+      flex-wrap: wrap;
+      max-width: 350px;
+      justify-content: normal;
+      row-gap: 15px;
+    }
   }
 
   &__filter {

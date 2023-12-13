@@ -21,6 +21,11 @@
   @include tablet {
     max-width: 354px;
   }
+  @include mobile {
+    max-width: 450px;
+    max-height: 404px;
+    margin: 0px;
+  }
 
   &:hover,
   &:focus {
@@ -35,12 +40,21 @@
     @include tablet {
       max-width: 100%;
     }
+    @include mobile {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__image-container {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    @include mobile {
+      width: 450px;
+      height: 294px;
+    }
   }
 }
 .overlay {
@@ -53,11 +67,17 @@
   opacity: 0.9;
   transition-property: transform;
   background-color: $second-color;
+  @include mobile {
+    transform: translateY(134%);
+  }
 
   &__text {
     @include font(white, 18px, 400, 0.54px, 28px);
     padding: 64px 24px;
     opacity: 0.9;
+    @include mobile {
+      padding: 77px 24px;
+    }
   }
 }
 .card-text {
