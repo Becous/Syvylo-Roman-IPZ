@@ -3,6 +3,9 @@
   padding-bottom: 94px;
   &__item {
     max-width: 350px;
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__list {
@@ -11,12 +14,17 @@
     @include tablet {
       flex-wrap: wrap;
     }
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__title {
     @include font($main-color, 14px, 700, 0.42px);
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &__text {
@@ -32,5 +40,8 @@
   margin-bottom: 30px;
   @include tablet {
     padding: 25px 142px;
+  }
+  @include mobile {
+    padding: 25px 190px;
   }
 }

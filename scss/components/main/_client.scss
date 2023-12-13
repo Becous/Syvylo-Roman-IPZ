@@ -11,6 +11,10 @@
     @include tablet {
       flex-wrap: wrap;
     }
+    @include mobile {
+      gap: 17px;
+      flex-wrap: wrap;
+    }
   }
 
   &__card {
@@ -41,6 +45,9 @@
     color: var(--icon);
     fill: currentColor;
     transition: color 0.5s, border 0.5s;
+    @include mobile {
+      padding: 16px 52px;
+    }
 
     &:hover,
     &:focus {
