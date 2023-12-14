@@ -165,10 +165,7 @@
       &::before {
         content: "✔";
         color: white;
-        margin-left: -2px;
-        @include tablet {
-          margin-left: 2px;
-        }
+        margin-left: 2px;
       }
     }
   }

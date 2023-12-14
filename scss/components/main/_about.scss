@@ -1,6 +1,9 @@
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
+  @include mobile {
+    padding: 60px 0;
+  }
   &__item {
     max-width: 350px;
     @include mobile {

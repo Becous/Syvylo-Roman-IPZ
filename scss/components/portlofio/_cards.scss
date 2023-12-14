@@ -1,6 +1,9 @@
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  @include mobile {
+    padding: 60px 0;
+  }
 
   &__list {
     list-style: none;
@@ -27,16 +30,19 @@
     margin: 0px;
   }
 
-  &:hover,
-  &:focus {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+  &__link {
+    &:hover,
+    &:focus {
+      box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
-  &:hover .overlay,
-  &:focus .overlay {
-    transform: translateY(0);
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
   }
   &__img {
+    width: auto;
     @include tablet {
       max-width: 100%;
     }

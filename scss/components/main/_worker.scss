@@ -5,6 +5,9 @@
   margin: 0;
   padding-bottom: 94px;
   padding-top: 94px;
+  @include mobile {
+    padding: 60px 0;
+  }
 
   &__list {
     display: flex;
@@ -37,13 +40,7 @@
   }
 
   &__info {
-    padding: 30px 32px 30px;
-    @include tablet {
-      padding: 30px 74px 24px;
-    }
-    @include mobile {
-      padding: 30px 120px 24px;
-    }
+    padding: 30px;
   }
 
   &__name {
