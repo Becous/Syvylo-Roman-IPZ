@@ -93,7 +93,7 @@
         background-color: $second-color;
 
         @include tablet {
-          bottom: -10px;
+          bottom: 10px;
         }
         @include desktop {
           bottom: -1px;

@@ -4,6 +4,9 @@
   @include mobile {
     padding: 60px 0;
   }
+  @include tablet {
+    padding: 60px 0;
+  }
   &__item {
     max-width: 350px;
     @include mobile {

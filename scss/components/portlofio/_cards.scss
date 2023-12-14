@@ -4,6 +4,9 @@
   @include mobile {
     padding: 60px 0;
   }
+  @include tablet {
+    padding: 60px 0;
+  }
 
   &__list {
     list-style: none;
@@ -29,13 +32,12 @@
     max-height: 404px;
     margin: 0px;
   }
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
   &__link {
-    &:hover,
-    &:focus {
-      box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-
     &:hover .overlay,
     &:focus .overlay {
       transform: translateY(0);
