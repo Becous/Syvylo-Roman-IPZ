@@ -9,6 +9,12 @@
   align-items: center;
   text-align: center;
 
+  @include mobile {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   &__title {
     @include font(white, 44px, 900, 2.64px, 60px);
     margin: auto;

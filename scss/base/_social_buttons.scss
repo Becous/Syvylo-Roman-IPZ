@@ -1,8 +1,15 @@
 .social {
+  @include tablet {
+    text-align: center;
+  }
+  @include mobile {
+    text-align: center;
+  }
   &__list {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     margin-top: 16px;
 
     &_g10 {

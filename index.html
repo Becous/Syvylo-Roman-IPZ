@@ -11,45 +11,90 @@
     <title>Web Studio</title>  
 </head>
 <body>
-
-    <!-- Header -->
     <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span class="logo_blue">Web</span><span>Studio</span>
-            </a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link_active" href="index.html">Студія</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="portfolio.html">Портфоліо</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Контакт</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="contact__list">
-                <li class="contact__item">
-                    <a class="contact__button" href="mailto:info@devstudio.com">
-                        <svg class="contact__logo" width="16" height="16"> 
-                            <use href="./images/svg/icons.svg#mail">
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contact__item">
-                    <a class="contact__button" href="tel:+380961111111">
-                        <svg class="contact__logo" width="16", height="16">
-                            <use href="./images/svg/icons.svg#phone">
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="container header__container">
+        <a class="logo" href="./index.html">
+          <span class="logo_blue"> Web</span><span class="logo_black">Studio</span></a
+        >
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a class="header__nav-link active" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="header__nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li><a class="header__nav-link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="mailto:info@devstudio.com"
+              ><svg class="header__mail-icon">
+                <use href="./images/svg/icons.svg#mail"></use>
+              </svg>info@devstudio.com</a
+            >
+          </li>
+          <li class="header__contacts-item">
+            <a class="header__contacts-link" href="tel:+380961111111"
+              ><svg class="header__tel-icon">
+                <use href="./images/svg/icons.svg#phone"></use>
+              </svg>+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      <button class="mobile_button" type="button" data-menu-button aria-expanded="false">
+        <svg class="mobile_button-close" width="19" height="19">
+          <use href="./images/svg/icons.svg#menu_close"></use>
+        </svg>
+        <svg class="mobile_button-open" width="24" height="16">
+          <use href="./images/svg/icons.svg#icon_menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile" data-menu>
+      <nav class="mobile__nav">
+        <ul class="mobile__nav-list">
+          <li class="mobile__nav-item">
+            <a href="./index.html" class="mobile__nav-link active">Студія</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a href="./portfolio.html" class="mobile__nav-link">Портфоліо</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a href="" class="mobile__nav-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile__contacts-list">
+        <li class="mobile__contacts-item">
+          <a
+            class="mobile__contacts-link link mobile__contacts-link--blue"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile__contacts-item">
+          <a class="mobile__contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile__social-list">
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">Instagram</a>
+        </li>
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">Twitter</a>
+        </li>
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">Facebook</a>
+        </li>
+        <li class="mobile__social-item">
+          <a class="mobile__social-link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     </header>
 
     <!-- Main  -->
@@ -353,12 +398,12 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="info">
+        <div class="container footer__container">
+            <div class="footer__inner">
                 <a href="index.html" class="logo">
                     <span class="logo_blue">Web</span><span class="logo_white">Studio</span>
                 </a>
-                <address class="info__box">
+                <address class="info">
                     <ul class="info__list">
                         <li class="info__items">
                             <a class="address__link" rel="nofollow" href="https://goo.gl/maps/qWS8BV7t2WGqXTAa9">м. Київ, пр-т Лесі Українки, 26</a>
@@ -372,7 +417,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="social">
+            <div class="footer__inner">
                 <p class="footer__title">Приєднуйтесь</p>
                 <ul class="social__list social__list_g10">
                     <li class="social__item">
@@ -405,7 +450,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__form-box">
+            <div class="footer__inner">
                 <p class="footer__title">Підпішіться на розилку</p>
                 <form class="footer__form">
                     <input type="email" class="footer__input" required placeholder="E-mail">
@@ -469,6 +514,8 @@
             </form>
         </div>
     </div>
+
+    <script src="./js/nav.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

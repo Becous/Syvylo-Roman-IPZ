@@ -2,16 +2,65 @@
   background-color: $footer-color;
   color: $white;
 
+  &__inner {
+    &:not(:first-child) {
+      margin-left: 98px;
+      @include mobile {
+        margin-left: 0;
+      }
+      @include tablet {
+        margin-left: 0;
+      }
+    }
+    &:nth-child(1) {
+      @include mobile {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      @include tablet {
+        text-align: center;
+      }
+    }
+    &:nth-child(2) {
+      @include mobile {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      @include tablet {
+        text-align: center;
+      }
+    }
+    &:nth-child(3) {
+      @include mobile {
+        text-align: center;
+      }
+      @include tablet {
+        margin-top: 60px;
+        text-align: center;
+      }
+    }
+  }
+
   & .logo {
     display: inline-block;
     margin-bottom: 28px;
   }
 
-  & .container {
+  &__container {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    align-items: baseline;
+
+    @include mobile {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   }
 
   &__title {
@@ -21,10 +70,37 @@
   }
   &__form-box {
     margin-left: 94px;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-top: 60px;
+    }
+    @include mobile {
+      margin-left: 0;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__form {
     display: flex;
+    @include tablet {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
   }
 
   &__input {
@@ -35,6 +111,9 @@
     border-radius: 4px;
     border: 1px rgba(255, 255, 255, 0.3) solid;
     padding: 16px 0px 16px 16px;
+    @include mobile {
+      width: 450px;
+    }
   }
 
   &__button {
@@ -44,10 +123,15 @@
     margin-left: 12px;
     display: flex;
     justify-content: center;
+    @include tablet {
+      margin-left: 0;
+    }
+    @include mobile {
+      margin-left: 0;
+    }
   }
 }
 .info {
-  margin-right: 93px;
   &__items {
     &:not(:last-child) {
       margin-bottom: 12px;
@@ -60,6 +144,7 @@
 }
 .address__link {
   @include font(white, 14px, 400, 0.42px, 16px);
+  white-space: nowrap;
 }
 
 .button__icon {
